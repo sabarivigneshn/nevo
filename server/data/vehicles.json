@@ -8,7 +8,18 @@
       "availableFromTime": "08:00:00",
       "availableToTime": "18:00:00",
       "availableDays": ["mon","tue","wed","thur","fri"],
-      "bookedSlots": {"2025-12-01": ["09:00"]},
+      "bookedSlots": {},
+      "minimumMinutesBetweenBookings": 15,
+      "durationMins": 45
+    },
+    {
+      "id": "tesla_1010",
+      "type": "tesla_model3",
+      "location": "dublin",
+      "availableFromTime": "08:00:00",
+      "availableToTime": "18:00:00",
+      "availableDays": ["mon","tue","wed","thur","fri"],
+      "bookedSlots": {},
       "minimumMinutesBetweenBookings": 15,
       "durationMins": 45
     },
