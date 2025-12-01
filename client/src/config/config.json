@@ -1,0 +1,7 @@
+{
+    "serverBaseUrl": "http://localhost:9000/api",
+    "apiEndpoints": {
+        "checkAvailability": "/vehicles/availability",
+        "testdrive": "/vehicles/test-drive"
+    }
+}

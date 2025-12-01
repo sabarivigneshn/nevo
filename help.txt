@@ -1,3 +1,11 @@
+Future goals
+
+Database
+Redux setup
+
+
+
+
 Get - availability
 location
 vehicleType
