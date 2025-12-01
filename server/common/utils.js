@@ -26,6 +26,5 @@ function isBetween(scheduleTime, slotStart, slotEnd) {
 
 module.exports = {
     addMinutes,
-    compareTimes,
     isBetween
 }

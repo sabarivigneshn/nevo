@@ -125,7 +125,6 @@ const BookTestDrive = () => {
                             {locations.map(location => {
                                 return <option key={location.id}>{location.location}</option>
                             })}
-
                         </select>
                     </div>
 
@@ -140,7 +139,6 @@ const BookTestDrive = () => {
                                 onChange={handleInputChange}
                                 min={today}
                                 max={maxDate}
-
                                 required
                             />
                             <small>Available up to 14 days in advance</small>
@@ -232,7 +230,6 @@ const BookTestDrive = () => {
                     )}
                 </form>
             )}
-
         </div>
     );
 }
