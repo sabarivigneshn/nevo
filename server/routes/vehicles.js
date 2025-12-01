@@ -27,7 +27,7 @@ router.post('/availability', validate(availabilitySchema), function (req, res, n
     const isVehicleAvailable = vehicleService.getVehicleAvailability(req.body)
     const availabiltyResponse = {
       ...req.body,
-      isVehicleAvailable
+      ...isVehicleAvailable
     }
     res.json(availabiltyResponse)
   } catch (err) {
@@ -43,8 +43,8 @@ router.post('/availability', validate(availabilitySchema), function (req, res, n
 
 router.post('/test-drive', validate(testDriveSchema), function (req, res, next) {
   try {
-    const isScheduled = vehicleService.scheduleTestDrive(req.body);
-    res.json({...req.body, isScheduled})
+    const scheduleResults = vehicleService.scheduleTestDrive(req.body);
+    res.json({...req.body, ...scheduleResults})
   } catch(err) {
     const statusCode = err.statusCode || 500;
     const errorMessage = err.message || 'Internal Server Error';
